@@ -101,7 +101,7 @@ fi
 ##################
 
 today="$(date +"%Y-%m-%d")"
-random_string="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 4 ; echo '')"
+random_string="$(head /dev/urandom | LC_CTYPE=C tr -dc A-Za-z0-9 | head -c 4 ; echo '')"
 dir="$today-$random_string-commits"
 
 echo "Creating new folder $dir..."

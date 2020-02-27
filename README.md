@@ -36,7 +36,7 @@ $ ./committee.sh -u torvalds -s 2020-02-01 -e 2020-02-29
 
 ```
 $ cd repos/<the generated folder>
-$ git logs
+$ git log
 $ git config -l
 ```
 

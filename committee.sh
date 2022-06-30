@@ -93,7 +93,7 @@ then
   data=`jq -c ".contributions[]$select" $file`
 elif [ ! -z "$username" ];
 then
-  data=`curl -s https://github-contributions.now.sh/api/v1/$username | jq -c ".contributions[]$select"`
+  data=`curl -s https://github-contributions.vercel.app/api/v1/$username | jq -c ".contributions[]$select"`
 fi
 
 ##################
